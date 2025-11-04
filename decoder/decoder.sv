@@ -1,5 +1,5 @@
 /* 
-This is a X-to-X^2 decoder model
+This is a X-to-X^2 decoder module
 */
 
 
