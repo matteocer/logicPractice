@@ -1,3 +1,8 @@
+/* 
+This is a X-to-1 multiplexor module
+*/
+
+
 module multiplexor #(
     parameter INPUT_WIDTH = 8,
     parameter SELECT_WIDTH = $clog2(INPUT_WIDTH)
@@ -7,9 +12,7 @@ module multiplexor #(
     output logic multiplexorOut
  );
 
-
     assign multiplexorOut = multiplexorIn[multiplexorSel];
-
 
 endmodule
 
