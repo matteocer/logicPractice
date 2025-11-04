@@ -19,11 +19,14 @@ typedef struct packed {
     logic zero;
 } flags_t;
 
-module alu #(parameter W = 8) 
-    (input aluControl_t control,
-     input logic[W-1:0] Ain, Bin,
-     output logic[W-1:0] aluOut,
-     output flags_t aluFlags);
+module alu # (
+    parameter W = 8
+  )( 
+    input aluControl_t control,
+    input logic[W-1:0] Ain, Bin,
+    output logic[W-1:0] aluOut,
+    output flags_t aluFlags
+  );
 
     logic[W:0] out;
 
